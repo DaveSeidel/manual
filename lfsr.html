@@ -66,7 +66,7 @@
         of the output; larger values result in a wider spread of values.
     </p>
         <p>
-      <span class="emphasis"><em>iseed (optional, default -1)</em></span> -- initial state of the shift register, as a
+      <span class="emphasis"><em>iseed</em></span> (optional, default -1) -- initial state of the shift register, as a
         pattern of bits. The value is treated as an unsigned integer, so the default
         of -1 is effectivly all bits on (0b11111111...).
     </p>
@@ -77,100 +77,22 @@
         <p>
       <span class="emphasis"><em>knum</em></span> -- integer output
     </p>
-        <p>
-      Then describe performace in detail.
-    </p>
-        <p>Use for internal manual links: <a class="link" href="delayr.html" title="delayr"><em class="citetitle">delayr</em></a> and this for external hyperlinks: <a class="ulink" href="examples/lfsr.csd" target="_top"><em class="citetitle">lfsr.csd</em></a> or for the internet: <a class="ulink" href="http://www.csounds.com" target="_top"><em class="citetitle">Csounds.com page</em></a>.
-    </p>
-        <p>
-      You can also emphasize <span class="emphasis"><em>words</em></span>.
-    </p>
-        <div class="note" style="margin-left: 0.5in; margin-right: 0.5in;">
-          <table border="0" summary="Note: Title of the note (optional)">
-            <tr>
-              <td rowspan="2" align="center" valign="top" width="25">
-                <img alt="[Note]" src="images/note.png" />
-              </td>
-              <th align="left">Title of the note (optional)</th>
-            </tr>
-            <tr>
-              <td align="left" valign="top">
-                <p>
-        An important note. You can also use "tip" or "warning" instead of note.
-      </p>
-              </td>
-            </tr>
-          </table>
-        </div>
-        <p>
-      You can also do lists.
-      </p>
-        <div class="itemizedlist">
-          <ul class="itemizedlist" style="list-style-type: disc; ">
-            <li class="listitem">
-              <p>First item</p>
-            </li>
-            <li class="listitem">
-              <p>Second item</p>
-            </li>
-          </ul>
-        </div>
-        <p>
-    </p>
-        <p>
-      You can also do numbered lists.
-      </p>
-        <div class="orderedlist">
-          <ol class="orderedlist" type="1">
-            <li class="listitem">
-              <p>First item</p>
-            </li>
-            <li class="listitem">
-              <p>Second item</p>
-            </li>
-          </ol>
-        </div>
-        <p>
-    </p>
-        <p>
-      Put inline program lines like this:
-      </p>
-        <pre class="programlisting">aout oscil 10000, 440, 1</pre>
-        <p>
-      And Csound output like this:
-      </p>
-        <div class="literallayout">
-          <p>Output text</p>
-        </div>
-        <p>
-    </p>
-        <p>
-      You can put images like this:
-      </p>
-        <div class="mediaobject">
-          <img src="images/grain3_2.png" alt="[A diagram showing grains with a start time less than zero in red.]" />
-          <div class="caption">
-            <p>A diagram showing grains with a start time less than zero in red.</p>
-          </div>
-        </div>
-        <p>
-    </p>
       </div>
       <div class="refsect1">
-        <a id="idm116623"></a>
+        <a id="idm116587"></a>
         <h2>Examples</h2>
         <p>
-      Here is an example of the delay opcode. It uses the file <a class="ulink" href="examples/lfsr.csd" target="_top"><em class="citetitle">lfsr.csd</em></a>.
+      Here is an example of the lfsr opcode. It uses the file <a class="ulink" href="examples/lfsr.csd" target="_top"><em class="citetitle">lfsr.csd</em></a>.
       </p>
         <div class="example">
-          <a id="idm116628"></a>
+          <a id="idm116592"></a>
           <p class="title">
             <strong>Example 481. Example of the lfsr opcode.</strong>
           </p>
           <div class="example-contents">
             <p>See the sections <a class="link" href="UsingRealTime.html" title="Real-Time Audio"><em class="citetitle">Real-time Audio</em></a> and <a class="link" href="CommandFlags.html" title="Csound command line"><em class="citetitle">Command Line Flags</em></a> for more information on using command line flags.</p>
             <div class="refsect1">
-              <a id="idm116635"></a>
+              <a id="idm116599"></a>
               <pre class="programlisting">
 <span class="nt">&lt;CsoundSynthesizer&gt;</span>
 <span class="nt">&lt;CsOptions&gt;</span>
@@ -242,18 +164,11 @@ gi<span class="n">Cent</span> <span class="o">=</span> <span class="nb">ftgen</s
     </p>
       </div>
       <div class="refsect1">
-        <a id="idm116901"></a>
-        <h2>See Also</h2>
-        <p>
-      <a class="link" href="deltap.html" title="deltap"><em class="citetitle">deltap</em></a>
-    </p>
-      </div>
-      <div class="refsect1">
-        <a id="idm116906"></a>
+        <a id="idm116865"></a>
         <h2>Credits</h2>
-        <p>By: John ffitch 2010</p>
-        <p>Additional information</p>
-        <p>New in version 6.??</p>
+        <p>By: Dave Seidel 2020</p>
+        <p>Based on code by Patrick Dowling in the Ornament &amp; Crime firmware.</p>
+        <p>New in version 6.16</p>
       </div>
     </div>
     <div class="navfooter">
